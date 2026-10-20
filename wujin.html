@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rajadhana Hardware | Mirigama</title>
+<style>
+:root{--green:#174b35;--gold:#e5b64f;--cream:#f7f5ee}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;line-height:1.7;background:var(--cream);color:#26352b}
+header{background:var(--green);color:white;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+header strong{font-size:20px}
+select{padding:9px;border-radius:7px}
+.hero{background:linear-gradient(135deg,#174b35,#327653);color:white;padding:65px 6%}
+.hero>div,main{max-width:1050px;margin:auto}
+.hero h1{font-size:clamp(32px,5vw,54px);line-height:1.15}
+.hero p{font-size:18px;max-width:750px}
+.btn{display:inline-block;padding:11px 17px;margin:8px 8px 0 0;border-radius:8px;text-decoration:none;font-weight:bold;background:var(--gold);color:#203326}
+.btn.outline{background:transparent;border:1px solid white;color:white}
+main{padding:15px 22px 55px}
+section{padding:32px 0}
+h2{color:var(--green);font-size:30px;margin-bottom:8px}
+.intro{color:#627066}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:20px}
+.card{background:white;padding:22px;border-radius:13px;border:1px solid #e0e7df}
+.card h3{color:var(--green);margin:5px 0}
+.icon{font-size:30px}
+.steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.step{display:flex;gap:14px;background:white;padding:18px;border-radius:12px}
+.num{background:#e5eee5;color:var(--green);font-weight:bold;padding:8px 12px;border-radius:50%;height:40px}
+.step h3{margin:0;color:var(--green)}
+.step p{margin:5px 0}
+.promise{background:#eaf0e7;padding:24px;border-radius:15px}
+.contact{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+.contact a{color:#226847;font-weight:bold;overflow-wrap:anywhere}
+.contact p{margin:14px 0}
+footer{background:#123b2a;color:white;text-align:center;padding:22px}
+@media(max-width:700px){.grid,.steps,.contact{grid-template-columns:1fr}.hero{padding:45px 6%}main{padding-left:18px;padding-right:18px}}
+</style>
+</head>
+<body>
+
+<header>
+  <strong>🔧 Rajadhana Hardware</strong>
+  <label>
+    <span data-t="language">Language</span>
+    <select id="lang" onchange="changeLang()">
+      <option value="en">English</option>
+      <option value="si">සිංහල</option>
+      <option value="ta">தமிழ்</option>
+    </select>
+  </label>
+</header>
+
+<div class="hero">
+  <div>
+    <p data-t="eyebrow">YOUR LOCAL HARDWARE STORE</p>
+    <h1 data-t="heroTitle">Quality Products. Fair Prices. Better Service.</h1>
+    <p data-t="heroText">Welcome to Rajadhana Hardware in Mirigama. We aim to provide useful hardware products at fair prices.</p>
+    <a class="btn" href="https://wa.me/94774867765" target="_blank" rel="noopener" data-t="whatsapp">Chat on WhatsApp</a>
+    <a class="btn outline" href="https://www.google.com/maps/search/?api=1&query=Rajadhana+Hardware+Mirigama+Sri+Lanka" target="_blank" rel="noopener" data-t="map">Find us on Google Maps</a>
+  </div>
+</div>
+
+<main>
+<section>
+  <h2 data-t="aboutTitle">Welcome to Rajadhana Hardware</h2>
+  <p class="intro" data-t="aboutText">We serve the Mirigama community with useful product choices, fair pricing and friendly service. Contact us to ask about stock and prices.</p>
+</section>
+
+<section>
+  <h2 data-t="productsTitle">Product Categories</h2>
+  <p class="intro" data-t="productsText">Ask us about current availability. Categories should be adjusted to match the products actually sold in store.</p>
+  <div class="grid">
+    <div class="card"><div class="icon">🛠️</div><h3 data-t="tools">Tools & Hardware</h3><p data-t="toolsText">Hand tools, nails, screws and everyday hardware items.</p></div>
+    <div class="card"><div class="icon">🏗️</div><h3 data-t="building">Building Materials</h3><p data-t="buildingText">Construction materials and building supplies.</p></div>
+    <div class="card"><div class="icon">🚰</div><h3 data-t="plumbing">Pipes & Plumbing Supplies</h3><p data-t="plumbingText">Water pipes, fittings and plumbing products.</p></div>
+    <div class="card"><div class="icon">🎨</div><h3 data-t="paint">Paint & Accessories</h3><p data-t="paintText">Paint products and painting tools.</p></div>
+    <div class="card"><div class="icon">💡</div><h3 data-t="electrical">Electrical Supplies</h3><p data-t="electricalText">Electrical items and related supplies.</p></div>
+    <div class="card"><div class="icon">📦</div><h3 data-t="other">Other Hardware Items</h3><p data-t="otherText">Contact us to check whether an item is available.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2 data-t="visionTitle">Our Future Plans</h2>
+  <p class="intro" data-t="visionIntro">We want to grow carefully by understanding customer needs and finding practical ways to improve value.</p>
+  <div class="steps">
+    <div class="step"><div class="num">01</div><div><h3 data-t="step1">Listen to Customers</h3><p data-t="step1Text">Understand which products local families, builders and tradespeople need most.</p></div></div>
+    <div class="step"><div class="num">02</div><div><h3 data-t="step2">Find Reliable Suppliers</h3><p data-t="step2Text">Compare quality, prices, shipping and import costs.</p></div></div>
+    <div class="step"><div class="num">03</div><div><h3 data-t="step3">Reduce Unnecessary Costs</h3><p data-t="step3Text">Explore direct sourcing where practical and financially sensible.</p></div></div>
+    <div class="step"><div class="num">04</div><div><h3 data-t="step4">Share Value</h3><p data-t="step4Text">Where savings are possible, aim to offer fair and competitive prices.</p></div></div>
+  </div>
+</section>
+
+<section class="promise">
+  <h2 data-t="promiseTitle">Our Promise to Customers</h2>
+  <p data-t="promiseIntro">Affordable products, careful choices and service built on trust.</p>
+  <div class="grid">
+    <div class="card"><h3 data-t="fair">Fair Pricing</h3><p data-t="fairText">We aim to offer clear options and competitive prices.</p></div>
+    <div class="card"><h3 data-t="quality">Product Quality</h3><p data-t="qualityText">We want to choose products carefully and consider quality as we grow.</p></div>
+    <div class="card"><h3 data-t="community">Local Community</h3><p data-t="communityText">We hope to support local families, builders and small businesses.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2 data-t="contactTitle">Visit or Contact Us</h2>
+  <p class="intro" data-t="contactIntro">Need a product or a price? Contact our store to ask about current availability.</p>
+  <div class="contact">
+    <div class="card">
+      <h3>Rajadhana Hardware</h3>
+      <p><strong data-t="location">Location</strong><br>
+      No. 16/6, Wijayarajadhahana Junction, Mirigama 11200, Sri Lanka</p>
+      <p><strong data-t="phone">Phone</strong><br>
+      <a href="tel:+94774867765">+94 77 486 7765</a></p>
+      <p><strong>WhatsApp</strong><br>
+      <a href="https://wa.me/94774867765" target="_blank" rel="noopener" data-t="whatsappText">Chat with us on WhatsApp</a></p>
+      <p><strong data-t="email">Email</strong><br>
+      <a href="mailto:wenwen1585@gmail.com">wenwen1585@gmail.com</a></p>
+      <a class="btn" href="https://wa.me/94774867765" target="_blank" rel="noopener" data-t="message">Message us</a>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Rajadhana+Hardware+Mirigama+Sri+Lanka" target="_blank" rel="noopener" data-t="map">Find us on Google Maps</a>
+    </div>
+    <div class="card">
+      <h3 data-t="beforeTitle">Before You Visit</h3>
+      <p data-t="beforeText">Product availability can change. Please call or message us first if you need to confirm an item's price or availability.</p>
+      <p data-t="addressNote">Please confirm the store address is correct before publishing the website.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <strong>Rajadhana Hardware</strong>
+  <p data-t="footer">Serving the Mirigama community with care and trust.</p>
+  <p>© <span id="year"></span> Rajadhana Hardware</p>
+</footer>
+
+<script>
+const words = {
+en: {
+language:"Language",eyebrow:"YOUR LOCAL HARDWARE STORE",
+heroTitle:"Quality Products. Fair Prices. Better Service.",
+heroText:"Welcome to Rajadhana Hardware in Mirigama. We aim to provide useful hardware products at fair prices.",
+whatsapp:"Chat on WhatsApp",map:"Find us on Google Maps",
+aboutTitle:"Welcome to Rajadhana Hardware",
+aboutText:"We serve the Mirigama community with useful product choices, fair pricing and friendly service. Contact us to ask about stock and prices.",
+productsTitle:"Product Categories",
+productsText:"Ask us about current availability. Categories should be adjusted to match the products actually sold in store.",
+tools:"Tools & Hardware",toolsText:"Hand tools, nails, screws and everyday hardware items.",
+building:"Building Materials",buildingText:"Construction materials and building supplies.",
+plumbing:"Pipes & Plumbing Supplies",plumbingText:"Water pipes, fittings and plumbing products.",
+paint:"Paint & Accessories",paintText:"Paint products and painting tools.",
+electrical:"Electrical Supplies",electricalText:"Electrical items and related supplies.",
+other:"Other Hardware Items",otherText:"Contact us to check whether an item is available.",
+visionTitle:"Our Future Plans",visionIntro:"We want to grow carefully by understanding customer needs and finding practical ways to improve value.",
+step1:"Listen to Customers",step1Text:"Understand which products local families, builders and tradespeople need most.",
+step2:"Find Reliable Suppliers",step2Text:"Compare quality, prices, shipping and import costs.",
+step3:"Reduce Unnecessary Costs",step3Text:"Explore direct sourcing where practical and financially sensible.",
+step4:"Share Value",step4Text:"Where savings are possible, aim to offer fair and competitive prices.",
+promiseTitle:"Our Promise to Customers",promiseIntro:"Affordable products, careful choices and service built on trust.",
+fair:"Fair Pricing",fairText:"We aim to offer clear options and competitive prices.",
+quality:"Product Quality",qualityText:"We want to choose products carefully and consider quality as we grow.",
+community:"Local Community",communityText:"We hope to support local families, builders and small businesses.",
+contactTitle:"Visit or Contact Us",contactIntro:"Need a product or a price? Contact our store to ask about current availability.",
+location:"Location",phone:"Phone",email:"Email",whatsappText:"Chat with us on WhatsApp",message:"Message us",
+beforeTitle:"Before You Visit",beforeText:"Product availability can change. Please call or message us first if you need to confirm an item's price or availability.",
+addressNote:"Please confirm the store address is correct before publishing the website.",
+footer:"Serving the Mirigama community with care and trust."
+},
+si: {
+language:"භාෂාව",eyebrow:"ඔබේ ප්‍රදේශයේ දෘඩාංග වෙළඳසැල",
+heroTitle:"ගුණාත්මක භාණ්ඩ. සාධාරණ මිල. හොඳ සේවාව.",
+heroText:"මිරිගම පිහිටි රාජධානී හාර්ඩ්වෙයාර් වෙත සාදරයෙන් පිළිගනිමු. සාධාරණ මිලකට දෘඩාංග භාණ්ඩ ලබා දීමට අපි උත්සාහ කරමු.",
+whatsapp:"WhatsApp හරහා කතා කරන්න",map:"Google Maps හි අපව සොයන්න",
+aboutTitle:"රාජධානී හාර්ඩ්වෙයාර් වෙත සාදරයෙන් පිළිගනිමු",
+aboutText:"අපි මිරිගම ප්‍රදේශයට සේවය කරන දෘඩාංග වෙළඳසැලකි. සාධාරණ මිල සහ මිත්‍රශීලී සේවාව අපගේ අරමුණයි. තොගය සහ මිල විමසීමට අප අමතන්න.",
+productsTitle:"භාණ්ඩ වර්ග",productsText:"දැනට ඇති භාණ්ඩ පිළිබඳව විමසන්න. මෙම වර්ග සැබෑ තොගයට අනුව සකස් කරන්න.",
+tools:"මෙවලම් සහ දෘඩාංග",toolsText:"අත් මෙවලම්, ඇණ, ඉස්කුරුප්පු සහ දෘඩාංග භාණ්ඩ.",
+building:"ගොඩනැගිලි ද්‍රව්‍ය",buildingText:"ඉදිකිරීම් ද්‍රව්‍ය සහ සැපයුම්.",
+plumbing:"ජල නළ සහ උපාංග",plumbingText:"ජල නළ, සම්බන්ධක සහ නළ සවිකිරීම් භාණ්ඩ.",
+paint:"තීන්ත සහ උපාංග",paintText:"තීන්ත සහ තීන්ත ආලේපන මෙවලම්.",
+electrical:"විදුලි උපකරණ",electricalText:"විදුලි භාණ්ඩ සහ අදාළ සැපයුම්.",
+other:"වෙනත් දෘඩාංග භාණ්ඩ",otherText:"භාණ්ඩයක් තිබේදැයි දැනගැනීමට අප අමතන්න.",
+visionTitle:"අපගේ අනාගත සැලසුම්",visionIntro:"පාරිභෝගික අවශ්‍යතා හඳුනාගෙන ව්‍යාපාරය වගකීමෙන් වර්ධනය කිරීමට අපි කැමැත්තෙමු.",
+step1:"ගනුදෙනුකරුවන්ට සවන් දෙන්න",step1Text:"ප්‍රදේශයේ පවුල්වලට සහ ඉදිකිරීම්කරුවන්ට අවශ්‍ය භාණ්ඩ හඳුනාගන්න.",
+step2:"විශ්වාසදායක සැපයුම්කරුවන් සොයන්න",step2Text:"ගුණාත්මකභාවය, මිල, ප්‍රවාහන සහ ආනයන වියදම් සසඳන්න.",
+step3:"අනවශ්‍ය වියදම් අඩු කරන්න",step3Text:"සුදුසු අවස්ථාවල සෘජු මිලදී ගැනීම් සොයා බලන්න.",
+step4:"වාසිය පාරිභෝගිකයන්ට ලබා දෙන්න",step4Text:"වියදම් ඉතිරි කළ හැකි නම් සාධාරණ මිල ලබා දීමට උත්සාහ කරන්න.",
+promiseTitle:"ගනුදෙනුකරුවන්ට අපගේ පොරොන්දුව",promiseIntro:"සාධාරණ මිල, සැලකිල්ලෙන් තෝරාගත් භාණ්ඩ සහ විශ්වාසදායක සේවාව.",
+fair:"සාධාරණ මිල",fairText:"තරඟකාරී මිල සහ පැහැදිලි තේරීම් ලබා දීමට උත්සාහ කරමු.",
+quality:"භාණ්ඩවල ගුණාත්මකභාවය",qualityText:"භාණ්ඩ සැලකිල්ලෙන් තෝරා ගනිමින් ගුණාත්මකභාවයට මුල් තැන දෙමු.",
+community:"ප්‍රාදේශීය ප්‍රජාව",communityText:"ප්‍රදේශයේ පවුල්වලට සහ කුඩා ව්‍යාපාරවලට සහාය වීමට බලාපොරොත්තු වෙමු.",
+contactTitle:"වෙළඳසැලට පැමිණෙන්න හෝ අප අමතන්න",contactIntro:"භාණ්ඩයක් හෝ මිලක් දැනගැනීමට අප අමතන්න.",
+location:"ලිපිනය",phone:"දුරකථනය",email:"විද්‍යුත් තැපෑල",whatsappText:"WhatsApp හරහා පණිවිඩයක් එවන්න",message:"පණිවිඩයක් එවන්න",
+beforeTitle:"පැමිණීමට පෙර",beforeText:"භාණ්ඩ තොගය වෙනස් විය හැකිය. මිල හෝ තොගය තහවුරු කරගැනීමට පෙර අප අමතන්න.",
+addressNote:"වෙබ් අඩවිය පළ කිරීමට පෙර ලිපිනය නිවැරදිදැයි තහවුරු කරන්න.",
+footer:"විශ්වාසයෙන් මිරිගම ප්‍රජාවට සේවය කරමු."
+},
+ta: {
+language:"மொழி",eyebrow:"உங்கள் உள்ளூர் வன்பொருள் கடை",
+heroTitle:"தரமான பொருட்கள். நியாயமான விலை. சிறந்த சேவை.",
+heroText:"மிரிகமவில் உள்ள ராஜதானா ஹார்ட்வேர் கடைக்கு வரவேற்கிறோம். நியாயமான விலையில் வன்பொருள் பொருட்களை வழங்க முயல்கிறோம்.",
+whatsapp:"WhatsApp மூலம் தொடர்புகொள்ளுங்கள்",map:"Google Maps-ல் எங்களைக் காண்க",
+aboutTitle:"ராஜதானா ஹார்ட்வேர் கடைக்கு வரவேற்கிறோம்",
+aboutText:"மிரிகம சமூகத்திற்கு சேவை செய்யும் உள்ளூர் வன்பொருள் கடை நாங்கள். நியாயமான விலை மற்றும் நட்பான சேவையை வழங்குகிறோம். இருப்பு மற்றும் விலைகளை அறிய தொடர்புகொள்ளுங்கள்.",
+productsTitle:"பொருள் வகைகள்",productsText:"தற்போது கிடைக்கும் பொருட்களைப் பற்றி கேளுங்கள். உண்மையான இருப்புக்கு ஏற்ப வகைகளை மாற்றவும்.",
+tools:"கருவிகள் மற்றும் வன்பொருள்",toolsText:"கை கருவிகள், ஆணிகள், திருகுகள் மற்றும் வன்பொருள் பொருட்கள்.",
+building:"கட்டுமானப் பொருட்கள்",buildingText:"கட்டுமானப் பொருட்கள் மற்றும் உபகரணங்கள்.",
+plumbing:"குழாய்கள் மற்றும் பிளம்பிங் பொருட்கள்",plumbingText:"தண்ணீர் குழாய்கள் மற்றும் இணைப்புகள்.",
+paint:"வண்ணப்பூச்சு மற்றும் கருவிகள்",paintText:"வண்ணப்பூச்சு மற்றும் பூசும் கருவிகள்.",
+electrical:"மின்சாரப் பொருட்கள்",electricalText:"மின்சாரப் பொருட்கள் மற்றும் தொடர்புடைய உபகரணங்கள்.",
+other:"பிற வன்பொருள் பொருட்கள்",otherText:"ஒரு பொருள் கிடைக்கிறதா என அறிய எங்களைத் தொடர்புகொள்ளுங்கள்.",
+visionTitle:"எங்கள் எதிர்காலத் திட்டங்கள்",visionIntro:"வாடிக்கையாளர் தேவைகளைப் புரிந்து கொண்டு கவனமாக வளர விரும்புகிறோம்.",
+step1:"வாடிக்கையாளர்களைக் கேளுங்கள்",step1Text:"குடும்பங்கள் மற்றும் கட்டிடத் தொழிலாளர்களுக்கு தேவையான பொருட்களை அறியுங்கள்.",
+step2:"நம்பகமான விநியோகஸ்தர்களைக் கண்டறியுங்கள்",step2Text:"தரம், விலை, போக்குவரத்து மற்றும் இறக்குமதிச் செலவுகளை ஒப்பிடுங்கள்.",
+step3:"தேவையற்ற செலவுகளைக் குறையுங்கள்",step3Text:"சாத்தியமான இடங்களில் நேரடி கொள்முதலை ஆராயுங்கள்.",
+step4:"வாடிக்கையாளர்களுக்கு பயன் அளியுங்கள்",step4Text:"சேமிப்பு சாத்தியமானால் நியாயமான விலைகளை வழங்க முயலுங்கள்.",
+promiseTitle:"வாடிக்கையாளர்களுக்கான எங்கள் உறுதி",promiseIntro:"நியாயமான விலை, கவனமாகத் தேர்ந்தெடுத்த பொருட்கள் மற்றும் நம்பகமான சேவை.",
+fair:"நியாயமான விலை",fairText:"தெளிவான தேர்வுகளையும் போட்டித்தன்மை வாய்ந்த விலைகளையும் வழங்க முயல்கிறோம்.",
+quality:"பொருளின் தரம்",qualityText:"பொருட்களை கவனமாகத் தேர்ந்தெடுத்து தரத்தைக் கருத்தில் கொள்கிறோம்.",
+community:"உள்ளூர் சமூகம்",communityText:"உள்ளூர் குடும்பங்கள் மற்றும் சிறு வணிகங்களுக்கு ஆதரவளிக்க விரும்புகிறோம்.",
+contactTitle:"வருகை தருங்கள் அல்லது தொடர்புகொள்ளுங்கள்",contactIntro:"பொருள் அல்லது விலை வேண்டுமா? எங்களைத் தொடர்புகொள்ளுங்கள்.",
+location:"முகவரி",phone:"தொலைபேசி",email:"மின்னஞ்சல்",whatsappText:"WhatsApp மூலம் செய்தி அனுப்புங்கள்",message:"செய்தி அனுப்புங்கள்",
+beforeTitle:"வருவதற்கு முன்",beforeText:"பொருட்களின் இருப்பு மாறலாம். விலை அல்லது இருப்பை உறுதிப்படுத்த எங்களை அழைக்கவும் அல்லது செய்தி அனுப்பவும்.",
+addressNote:"இணையதளத்தை வெளியிடுவதற்கு முன் முகவரியைச் சரிபார்க்கவும்.",
+footer:"நம்பிக்கையுடன் மிரிகம சமூகத்திற்கு சேவை செய்கிறோம்."
+}
+};
+function changeLang(){
+  const lang=document.getElementById("lang").value;
+  const dict=words[lang]||words.en;
+  document.documentElement.lang=lang;
+  document.querySelectorAll("[data-t]").forEach(el=>{
+    const key=el.getAttribute("data-t");
+    if(dict[key]) el.textContent=dict[key];
+  });
+}
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
